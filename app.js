@@ -8,7 +8,7 @@ async function loadMovies(nomeFilme){
         .then((Response) => {
             if(Response.ok) {
                 Response.json().then((json) => {
-                    console.log(json.Search)  
+                    console.log([0].Title)  
                 })
             }
         })
